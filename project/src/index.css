@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 3px rgba(74, 144, 226, 0.5);
+}
+
+span {
+    margin-bottom: 8px;
+}
+
+.lightMode {
+    color: black;
+}
+
+.darkMode {
+    color: white;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
+}
+
+
+/* Markdown Styling */
+
+.markdown h2 {
+    font-size: 1.25rem;
+    /* Larger headings */
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.markdown h3 {
+    font-size: 1rem;
+    /* Medium headings */
+    font-weight: bold;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.markdown p {
+    font-size: 0.9rem;
+    /* Normal text */
+    margin: 0.5rem 0;
+}
+
+.markdown ul {
+    list-style-type: disc;
+    /* Bullet points */
+    margin-left: 1.5rem;
+}
+
+.markdown li {
+    margin-bottom: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Custom Scrollbar Styling */
+
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #009688;
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #00796b;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+
+/* Applying custom scroll globally (optional) */
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #009688;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #00796b;
+}
+
+*::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
